@@ -24,3 +24,25 @@ fn rocket() -> _ {
     rocket::build()
         .mount("/", routes![index])
 }
+
+/*
+#[derive(HTMLElement)]
+#[html(className = "myClassName", parent = HTMLElement::div)]
+pub struct MyComponent {
+    pub body: &str; 
+}
+
+impl HTMLElement for MyComponent {
+    pub fn render(&self) -> String {
+        let className = "myClassName";
+        let body = self.body;
+
+        format!("<div className=\"{}\">\n{}\n</div>", className, body)
+    }
+}
+
+// impl HTMLBody for MyComponent {
+//     pub fn render_body(&self) -> String {
+//     }
+// }
+ */

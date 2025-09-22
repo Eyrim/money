@@ -82,3 +82,7 @@ macro_rules! html {
         }
     };
 }
+
+pub trait HTMLElement {
+
+}
